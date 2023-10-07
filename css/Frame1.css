@@ -1,0 +1,54 @@
+.Frame1 {
+    display: flex;
+    margin-top: 8.7em;
+}
+
+.Frame1-Container {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 47.875em;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+
+
+.Frame1-Button button{
+
+    display: flex;
+    font-weight: 600;
+    font-size: 1.5em;
+    border-radius: 8px;
+    border: none;
+}
+
+.Frame1-Text {
+    font-size: 3.0625em;
+    font-weight: 700;
+    text-align: center;
+    line-height: 130%;
+    
+
+    margin-bottom: 1em;
+
+
+}
+
+.Frame1-Volunteer {
+    background-color: #3777FF;
+    color: #FFF;
+    padding: 16px 24px;
+
+    margin-bottom: 3em;
+}
+
+.Frame1-SubText {
+    font-size: 1.5em;
+    font-weight: 600;
+    
+    margin-bottom: 2em;
+
+}
+

@@ -1,0 +1,371 @@
+
+// disable and enable scroll
+
+function disableScroll() {
+    // Get the current scroll position
+    var scrollPosition = window.scrollY || window.pageYOffset;
+    // Save the current scroll position
+    document.body.dataset.scroll = scrollPosition;
+    // Set the body to fixed position
+    document.body.style.position = 'fixed';
+    // Set the body width to 100% to prevent horizontal scrolling
+    document.body.style.width = '100%';
+    // Set the body top to the negative of the scroll position to keep it in place
+    document.body.style.top = '-' + scrollPosition + 'px';
+}
+
+function enableScroll() {
+    // Get the previous scroll position
+    var scrollPosition = document.body.dataset.scroll;
+    // Reset the body position to static
+    document.body.style.position = 'static';
+    // Reset the body width
+    document.body.style.width = 'auto';
+    // Reset the body top
+    document.body.style.top = 'auto';
+    // Scroll to the previous position
+    window.scrollTo(0, scrollPosition);
+}
+
+
+// var Append_Sec_stores; 
+
+// // // // // modal append
+// document.getElementById('colorButton').addEventListener('click', function() {
+//     var container = document.getElementById('InStores_Modal-Options');
+//     if (container.style.display === 'none') {
+//         container.style.display = 'block';
+//     } else {
+//         container.style.display = 'none';
+//     }
+// });
+// // in stores button
+// document.getElementById('colorButton').addEventListener('click', function() {
+//     var container = document.getElementById('InStores_Modal-Options');
+//     var computedStyle = window.getComputedStyle(container);
+
+//     if (computedStyle.display === 'none') {
+//         container.style.display = 'block';
+//     } else {
+//         container.style.display = 'none';
+//     }
+// });
+// // on the go
+// document.getElementById('colorButton1').addEventListener('click', function() {
+//     var container = document.getElementById('OnTheGo_Modal-Options');
+//     var computedStyle = window.getComputedStyle(container);
+
+//     if (computedStyle.display === 'none') {
+//         container.style.display = 'block';
+//     } else {
+//         container.style.display = 'none';
+//     }
+// });
+document.getElementById('colorButton').addEventListener('click', function() {
+    var container = document.getElementById('InStores_Modal-Options');
+    var computedStyle = window.getComputedStyle(container);
+
+    if (computedStyle.display === 'none') {
+        container.style.display = 'block';
+    } else {
+        container.style.display = 'none';
+    }
+});
+
+document.getElementById('colorButton1').addEventListener('click', function() {
+    var container = document.getElementById('OnTheGo_Modal-Options');
+    var computedStyle = window.getComputedStyle(container);
+
+    if (computedStyle.display === 'none') {
+        container.style.display = 'block';
+    } else {
+        container.style.display = 'none';
+    }
+});
+
+document.getElementById('colorButton2').addEventListener('click', function() {
+    var container = document.getElementById('FromHome_Modal-Options');
+    var computedStyle = window.getComputedStyle(container);
+
+    if (computedStyle.display === 'none') {
+        container.style.display = 'block';
+    } else {
+        container.style.display = 'none';
+    }
+});
+
+
+// box color
+
+
+
+document.getElementById('colorButton').addEventListener('click', function() {
+    var button = document.getElementById('colorButton');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+
+document.getElementById('colorButton1').addEventListener('click', function() {
+    var button = document.getElementById('colorButton1');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+
+document.getElementById('colorButton2').addEventListener('click', function() {
+    var button = document.getElementById('colorButton2');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+
+// box color for sub options in the step 1 modal
+document.getElementById('SubcolorButton1').addEventListener('click', function() {
+    var button = document.getElementById('SubcolorButton1-Box');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+
+document.getElementById('SubcolorButton2').addEventListener('click', function() {
+    var button = document.getElementById('SubcolorButton2-Box');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+
+document.getElementById('SubcolorButton3').addEventListener('click', function() {
+    var button = document.getElementById('SubcolorButton3-Box');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+
+document.getElementById('SubcolorButton4').addEventListener('click', function() {
+    var button = document.getElementById('SubcolorButton4-Box');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+
+document.getElementById('SubcolorButton5').addEventListener('click', function() {
+    var button = document.getElementById('SubcolorButton5-Box');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+
+document.getElementById('SubcolorButton6').addEventListener('click', function() {
+    var button = document.getElementById('SubcolorButton6-Box');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+
+document.getElementById('SubcolorButton7').addEventListener('click', function() {
+    var button = document.getElementById('SubcolorButton7-Box');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+
+document.getElementById('SubcolorButton8').addEventListener('click', function() {
+    var button = document.getElementById('SubcolorButton8-Box');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+
+
+document.getElementById('SubcolorButton9').addEventListener('click', function() {
+    var button = document.getElementById('SubcolorButton9-Box');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+
+//  on the go buttons
+document.getElementById('SubcolorButton10').addEventListener('click', function() {
+    var button = document.getElementById('SubcolorButton10-Box');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+
+document.getElementById('SubcolorButton11').addEventListener('click', function() {
+    var button = document.getElementById('SubcolorButton11-Box');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+
+document.getElementById('SubcolorButton12').addEventListener('click', function() {
+    var button = document.getElementById('SubcolorButton12-Box');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+
+document.getElementById('SubcolorButton13').addEventListener('click', function() {
+    var button = document.getElementById('SubcolorButton13-Box');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+
+// from home buttons
+document.getElementById('SubcolorButton14').addEventListener('click', function() {
+    var button = document.getElementById('SubcolorButton14-Box');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+document.getElementById('SubcolorButton15').addEventListener('click', function() {
+    var button = document.getElementById('SubcolorButton15-Box');
+    if (button.style.backgroundColor === 'grey') {
+        button.style.backgroundColor = ''; // Reset to default (empty string)
+    } else {
+        button.style.backgroundColor = 'grey';
+    }
+});
+// // On the go sub buttons
+
+// document.getElementById('Sub2colorButton1').addEventListener('click', function() {
+//     var button = document.getElementById('Subc2olorButton1-Box');
+//     if (button.style.backgroundColor === 'grey') {
+//         button.style.backgroundColor = ''; // Reset to default (empty string)
+//     } else {
+//         button.style.backgroundColor = 'grey';
+//     }
+// });
+
+// document.getElementById('Sub2colorButton2').addEventListener('click', function() {
+//     var button = document.getElementById('Subc2olorButton2-Box');
+//     if (button.style.backgroundColor === 'grey') {
+//         button.style.backgroundColor = ''; // Reset to default (empty string)
+//     } else {
+//         button.style.backgroundColor = 'grey';
+//     }
+// });
+
+// document.getElementById('Sub2colorButton3').addEventListener('click', function() {
+//     var button = document.getElementById('Subc2olorButton3-Box');
+//     if (button.style.backgroundColor === 'grey') {
+//         button.style.backgroundColor = ''; // Reset to default (empty string)
+//     } else {
+//         button.style.backgroundColor = 'grey';
+//     }
+// });
+
+// document.getElementById('Sub2colorButton4').addEventListener('click', function() {
+//     var button = document.getElementById('Subc2olorButton4-Box');
+//     if (button.style.backgroundColor === 'grey') {
+//         button.style.backgroundColor = ''; // Reset to default (empty string)
+//     } else {
+//         button.style.backgroundColor = 'grey';
+//     }
+// });
+
+
+// opens the vollunteer modal at the sign up frame button
+document.getElementById('openModal').addEventListener('click', function() {
+    var modal = document.getElementById('VollunteerForum');
+    modal.showModal();
+    disableScroll();
+    
+
+});
+// closes the volunteer modal button
+document.querySelector('.Modal-Close-Btn').addEventListener('click', function() {
+    var modal = document.getElementById('VollunteerForum');
+    modal.close();
+    enableScroll();
+});
+
+
+// scrolls the page to the desired frame
+document.getElementById('Store-Nav').addEventListener('click', function() {
+    var targetDiv = document.getElementById('Store-Frame');
+    targetDiv.scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('Volunteer-Nav').addEventListener('click', function() {
+    var targetDiv = document.getElementById('Volunteer-Frame');
+    targetDiv.scrollIntoView({ behavior: 'smooth' });
+});
+// main vol btn
+document.getElementById('Signup-Nav').addEventListener('click', function() {
+    var targetDiv = document.getElementById('Volunteer-Frame');
+    targetDiv.scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('Donate-Nav').addEventListener('click', function() {
+    var targetDiv = document.getElementById('Donate-Frame');
+    targetDiv.scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('About-Nav').addEventListener('click', function() {
+    var targetDiv = document.getElementById('About-Frame');
+    targetDiv.scrollIntoView({ behavior: 'smooth' });
+});
+
+// document.querySelectorAll('.menu-item').forEach(function(item) {
+//     item.addEventListener('click', function() {
+//         var targetDiv = document.getElementById('Frame2');
+//         targetDiv.scrollIntoView({ behavior: 'smooth' });
+//     });
+// });
+
+// function toggleModal(VollunteerForum, VollunteerForum2) {
+//     var currentModal = document.getElementById(VollunteerForum);
+//     var newModal = document.getElementById(VollunteerForum2);
+  
+//     if (currentModal && newModal) {
+//       currentModal.style.display = "none";
+//       newModal.style.display = "block"; // Assuming you want to display the new modal
+//     }
+//   }
+  
+//   // Example usage:
+//   toggleModal('VollunteerForum', 'SecondModal');
+  
+// // closes the volunteer modal button
+// document.getElementById('ContinueButton2').addEventListener('click', function() {
+//     toggleModal();
+//     console.log('hi');
+// });

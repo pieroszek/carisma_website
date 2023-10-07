@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Template with CSS Link</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="containerHead">
+            <div class="Items-1 Logo">
+                <img src="public/images/carismaLogo_1.svg" alt="">
+            </div>
+            <div class="Items-2">
+                <p >carisma</p>
+            </div>
+        </div>
+        <div class="containerMenu">
+            <button id="Store-Nav" class="MenuItems-1">Stores</button>
+            <button id="Volunteer-Nav" class="MenuItems-2">Volunteer</button>
+            <button id="Donate-Nav" class="MenuItems-3">Donate</button>
+            <button id="About-Nav" class="MenuItems-4">About us</button>
+            <button class="MenuItems-5">Eng</button>
+        </div>
+    </div>
+<!-- Refactor the top navbar -->
+
+    
+    </div>
+    <div class="Frame1-grid">
+        <div class="Frame1-MainText">
+            <P>We have charity shops,
+                supporting local communities,
+                a great place to Volunteer.</P>
+        </div>
+        <div class="Frame1-Button" >
+            <button class="Frame1-Button-Style "id="Signup-Nav">
+                <p>Volunteer</p>
+            </button>
+        </div>
+        <div class="Frame1-SubText">
+            <p>Visit our stores</p>
+        </div>
+        <div class="Frame1-GreenArrow">
+            <img src="public/images/arrow-1.svg">
+        </div>
+    </div>
+
+    <div id="Store-Frame" class="Frame2">
+        <div class="Frame2-grid">
+                <div class="Frame2-subTitle">
+                    <p>Stores</p>
+                </div>
+            <div class="Frame2-Title">
+                <p>Locations & Schedule</p>
+            </div>
+                <div class="Frame2-StoreLocation-Grid">
+                    <div class=" Card-1">
+                        <img src="public/images/storeMap_PlaceHolder.png">
+                        <div class="Card-Text">
+                            <p id="Card-Text-H1">Aldosa</p>
+                            <p id="Card-Text-H2">Carrer prada fonta sansa 32</p>
+                            <p id="Card-Text-H3">Mon-Fri: 10am to 16pm</p>
+                            <p id="Card-Text-H3">Sat: 13am to 16pm</p>
+                            <p id="Card-Text-H3">Sun: closed</p>
+                        </div>
+                    </div>
+                    <div class=" Card-2">
+                        <img src="public/images/storeMap_PlaceHolder.png">
+                        <div class="Card-Text">
+                            <p id="Card-Text-H1">La Massana</p>
+                            <p id="Card-Text-H2">Carrer prada fonta sansa 32</p>
+                            <p id="Card-Text-H3">Mon-Fri: 10am to 16pm</p>
+                            <p id="Card-Text-H3">Sat: 13am to 16pm</p>
+                            <p id="Card-Text-H3">Sun: closed</p>
+                        </div>
+                    </div>
+                    <div class=" Card-3">
+                        <img src="public/images/storeMap_PlaceHolder.png">
+                        <div class="Card-Text">
+                            <p id="Card-Text-H1">La vella</p>
+                            <p id="Card-Text-H2">Carrer prada fonta sansa 32</p>
+                            <p id="Card-Text-H3">Mon-Fri: 10am to 16pm</p>
+                            <p id="Card-Text-H3">Sat: 13am to 16pm</p>
+                            <p id="Card-Text-H3">Sun: closed</p>
+                        </div>
+                    </div>
+                    <div class=" Card-4">
+                        <img src="public/images/storeMap_PlaceHolder.png">
+                        <div class="Card-Text">
+                            <p id="Card-Text-H1">Sant Julia</p>
+                            <p id="Card-Text-H2">Carrer prada fonta sansa 32</p>
+                            <p id="Card-Text-H3">Mon-Fri: 10am to 16pm</p>
+                            <p id="Card-Text-H3">Sat: 13am to 16pm</p>
+                            <p id="Card-Text-H3">Sun: closed</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>  
+
+    <div id="Volunteer-Frame" class="Frame3">
+        <!-- <div class="Frame3-Grid"> -->
+            <div class="Frame3-subTitle">
+                <p>Volunteer</p>
+            </div>
+            <div class="Frame3-Title">
+                <p>Help out however you can!</p>
+            </div>
+            <div class="Frame3-UnderTitle">
+                <p>Consider helping out a community</p>
+            </div>
+            <div class="Frame3-Img">
+                <p></p>
+            </div>
+
+            <div class="Frame3-Button">
+                <button id="openModal" onClick="VollunteerForum.showModal()">Sign up</button>
+            </div>
+            <dialog id="VollunteerForum" >
+                <div>
+                    <div class="Modal-Main">
+                        <div class="Modal-Top">
+                            <div class="Modal-Top-Text">
+                                <p>Create your account</p>
+                            </div>
+                            <div>
+                                <button class="Modal-Close-Btn">
+                                    <img src="public/images/close-square.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="Modal-Middle-1">
+                            <div class="Modal-Middle">
+                                <div class="Modal-Middle-Dir">
+                                    <div class="Modal-Header">
+                                        <div class="Modal-subTitle">
+                                            <p>Become a Volunteer</p>
+                                        </div>
+                                        <div class="Modal-Title">
+                                            <p>How would you like to contribute?</p>
+                                        </div>
+                                    </div>
+                                    <div class="Modal-Options">
+                                        
+                                        <div id="InStores" class="Modal-Option">
+                                            <div class="Modal-Option-Box">
+                                                <button id="colorButton"></button>
+                                            </div>
+                                            <div class="Modal-Option-Text">
+                                                <p>In Stores</p>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div id="InStores_Modal-Options" class="Modal-SubOption">
+                                            <div class="Stores-Grid">
+                                                <!-- <div class="Stores-Role"> -->
+                                                    <button id="SubcolorButton1" class="Stores-Role-Button">
+                                                        <p id="SubcolorButton1-Box" class="Stores-Role-Box"></p>
+                                                        <p>Help Organize</p>
+                                                    </button>
+                                                    <button id="SubcolorButton2" class="Stores-Role-Button">
+                                                        <p id="SubcolorButton2-Box" class="Stores-Role-Box"></p>
+                                                        <p>Weigh Donations</p>
+                                                    </button>
+                                                    <button id="SubcolorButton3" class="Stores-Role-Button">
+                                                        <p id="SubcolorButton3-Box" class="Stores-Role-Box"></p>
+                                                        <p>Attend Clients</p>
+                                                    </button>
+                                                    <button id="SubcolorButton4" class="Stores-Role-Button">
+                                                        <p id="SubcolorButton4-Box" class="Stores-Role-Box"></p>
+                                                        <p>Help Clean</p>
+                                                    </button>
+                                                    <button id="SubcolorButton5" class="Stores-Role-Button">
+                                                        <p id="SubcolorButton5-Box" class="Stores-Role-Box"></p>
+                                                        <p>Order DVD's / CD's</p>
+                                                    </button>
+                                                    <button id="SubcolorButton6" class="Stores-Role-Button">
+                                                        <p id="SubcolorButton6-Box" class="Stores-Role-Box"></p>
+                                                        <p>Photograph Articles</p>
+                                                    </button>
+                                                    <button id="SubcolorButton7" class="Stores-Role-Button">
+                                                        <p id="SubcolorButton7-Box" class="Stores-Role-Box"></p>
+                                                        <p>Repair Electronics</p>
+                                                    </button>
+                                                    <button id="SubcolorButton8" class="Stores-Role-Button">
+                                                        <p id="SubcolorButton8-Box" class="Stores-Role-Box"></p>
+                                                        <p>Help to improve layout</p>
+                                                    </button>
+                                                    <button id="SubcolorButton9" class="Stores-Role-Button">
+                                                        <p id="SubcolorButton9-Box" class="Stores-Role-Box"></p>
+                                                        <p>Price Articles</p>
+                                                    </button>
+                                                <!-- </div> -->
+                                            </div>
+                                        </div>
+
+                                        <div id="OnTheGo" class="Modal-Option">
+                                            <div class="Modal-Option-Box">
+                                                <button id="colorButton1"></button>
+                                            </div>
+                                            <div class="Modal-Option-Text">
+                                                <p>On the Go</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div id="OnTheGo_Modal-Options" class="Modal-SubOption">
+                                            <div class="OnTheGo-Grid">
+                                                <!-- <div class="OnTheGo-Role"> -->
+                                                    <button id="SubcolorButton10" class="OnTheGo-Role-Button">
+                                                        <p id="SubcolorButton10-Box" class="Stores-Role-Box"></p>
+                                                        <p>Pickup Donations</p>
+                                                    </button>
+
+                                                    <button id="SubcolorButton11" class="OnTheGo-Role-Button">
+                                                        <p id="SubcolorButton11-Box" class="Stores-Role-Box"></p>
+                                                        <p>Evaluate Donations</p>
+                                                    </button>
+
+                                                    <button id="SubcolorButton12" class="OnTheGo-Role-Button">
+                                                        <p id="SubcolorButton12-Box" class="Stores-Role-Box"></p>
+                                                        <p>Distribute Publicity</p>
+                                                    </button>
+
+                                                    <button id="SubcolorButton13" class="OnTheGo-Role-Button">
+                                                        <p id="SubcolorButton13-Box" class="Stores-Role-Box"></p>
+                                                        <p>Interview about Carisma</p>
+                                                    </button>
+                                                    
+                                                <!-- </div> -->
+                                            </div>
+                                        </div>
+                                                                                                                            
+                                        <div id="FromHome" class="Modal-Option">
+                                            <div class="Modal-Option-Box">
+                                                <button id="colorButton2"></button>
+                                            </div>
+                                            <div class="Modal-Option-Text">
+                                                <p>From Home</p>
+                                            </div>
+                                        </div>
+
+                                        <div id="FromHome_Modal-Options" class="Modal-SubOption">
+                                            <div class="FromHome-Grid">
+                                                <!-- <div class="OnTheGo-Role"> -->
+                                                    <button id="SubcolorButton14" class="OnTheGo-Role-Button">
+                                                        <p id="SubcolorButton14-Box" class="Stores-Role-Box"></p>
+                                                        <p>Socials Media in general</p>
+                                                    </button>
+
+                                                    <button id="SubcolorButton15" class="OnTheGo-Role-Button">
+                                                        <p id="SubcolorButton15-Box" class="Stores-Role-Box"></p>
+                                                        <p>I.T in general</p>
+                                                    </button>
+
+                                                    <!-- <button id="Sub3colorButton3" class="OnTheGo-Role-Button">
+                                                        <p id="Sub3colorButton3-Box" class="Stores-Role-Box-Sug"></p>
+                                                        <p>Suggetions</p>
+                                                    </button> -->
+
+                                                    
+                                                <!-- </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Modal-Middle-2">
+                            <div class="Modal-Middle-Dir">
+                                <div class="Modal-Header">
+                                    <div class="Modal-subTitle">
+                                        <p>Become a Volunteer</p>
+                                    </div>
+                                    <div class="Modal-Title">
+                                        <p>Tell us how to contact you.</p>
+                                    </div>
+                                </div>
+
+                                <div class="Modal-Middle2-Grids">
+                                    <div class="Middle2-Input-Cards">
+                                        <div class="Input-Card">
+                                            <div class="Input-Card-Name">
+                                                <p>name</p>
+                                            </div>
+                                            <div class="Input-Card-Text">
+                                                <form ><!-- action="/submit" -->
+                                                    <input type="text" id="username" name="username">
+                                                    <!-- <textarea id="message" name="message" rows="1" cols="15"></textarea> -->
+                                                    <!-- <input type="submit" value="Submit"> -->
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="Middle2-Location-Cards">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                            <div class="Modal-Bottom">
+                            <div class="Modal-Bottom-Area">
+                                <div class="Modal-Steps">
+                                    <p>Step 1 of 2</p>
+                                </div>
+                                <div class="Modal-Continue">
+                                    <button id="ContinueButton" class="Modal-ContinueButton">
+                                        <p>Continue</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </dialog>
+
+        <!-- </div> -->
+ 
+    </div>
+
+    <div id="Donate-Frame" class="Frame4">
+        <div class="Frame4-SubTitle">
+            <p>Donate</p>
+        </div>
+        <div class="Frame4-Title">
+            <p>Consider giving something a second life</p>
+        </div>
+        <div class="Frame4-underTitle">
+            <p>Here is how you donate things, First choose what!</p>
+        </div>
+        <div class="Frame-4-Opts">
+            <!-- <div class="Frame-4-Opts1"> -->
+                <div class="Frame4-Grid">
+                    <div class="Frame4-ClothesOpt">
+                        <div class="Frame4-Box">
+                            <p></p>
+                        </div>
+                        <div class="Frame4-OptText">
+                            <p>things/clothes</p>
+                        </div>
+                    </div>
+                    <div class="Frame4-FurnitureOpt">
+                        <div class="Frame4-Box">
+                            <p></p>
+                        </div>
+                        <div class="Frame4-OptText">
+                            <p>Furniture</p>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <div id="About-Frame" class="Frame5">
+        <div class="Frame5-Content">
+            <div class="Frame5-Content-Title">
+                <div class="Frame5-subTitle">
+                    <p>About us</p>
+                </div>
+                <div class="Frame5-Title">
+                    <p>Press, History and More</p>
+                </div>
+            </div>
+            <div class="Frame5-Content-Main">
+                <div class="Frame5-Content-Main-Grid">
+                    <div class="Frame5-Content-Main-Grid-Text">
+                        <p>Nuestro objetivo es contribuir al bienestar social de Andorra,Nuestro objetivo es contribuir al bienestar social de Andorra</p>
+                        <!-- <img class="Frame5-Content-Main-Grid-Img" src="public/images/About_us_Old.png" alt=""> -->
+
+                    </div>
+  
+                </div>
+            </div>
+
+            <div class="Frame5-Button">
+                <div class="Frame5-Content-Button-Box">
+                    <p>See more</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Footer">
+        <div class="Footer-Main">
+            <div class="Footer-Text">
+                <p>Para donar artículos o ser voluntario, contáctenos en la tienda principal de la Massana en el edificio del Comú</p>
+            </div>
+            <div class="Footer-Contact-Info">
+                <div class="Footer-Contact-Email">
+                    <p>email: carismaandorra@gmail.com</p>
+                </div>
+                <div class="Footer-Contact-Number">
+                    <p>Tel: +376 646 244</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

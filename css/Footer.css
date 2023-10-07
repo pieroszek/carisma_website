@@ -1,0 +1,60 @@
+.Footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 3em;
+    background-color: #F8F8F8;
+    padding: 3em;
+    flex-direction: column;
+}
+
+.Top-Text {
+    padding-bottom: 1.5em;
+    text-align: center; 
+    font-size: 1.3em;
+}
+
+
+.Contact-Info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 3em;
+}
+
+.Email {
+    display: flex;
+    gap: 1em;
+}
+
+.Email img{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.Email p {
+    font-size: 1.3em;
+    font-style: normal;
+    /* font-weight: 600; */
+    line-height: 120%;
+}
+
+.Phone {
+    display: flex;
+    gap: 1em;
+}
+
+.Phone img{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.Phone p {
+    font-size: 1.3em;
+    font-style: normal;
+    /* font-weight: 600; */
+    line-height: 120%;
+}

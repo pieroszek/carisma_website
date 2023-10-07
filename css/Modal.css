@@ -1,0 +1,41 @@
+.Modal1 {
+    /* display: flex; */
+    border: none;
+    border-radius: .5em;
+    padding: 20px;
+    background-color: #fff;
+    width: 103.125em;
+    margin: auto;
+    text-align: center ;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: #78A632;
+}
+
+.modal-content {
+    text-align: left;
+}
+
+#closeModal {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+body.modal-open {
+    overflow: hidden; 
+    /* This somehow makes the stop scroll not break everything */
+}

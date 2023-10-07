@@ -1,0 +1,60 @@
+.Frame3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 8em;
+
+}
+
+.Frame3-Header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Frame3-Header-SubTitle {
+    color: #969696;
+
+
+    font-size: 1.5625em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.Frame3-Header-Title {
+    font-size: 2.4375em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.Frame3-Header-UnderText {
+    font-size: 1.5625em;
+    color: #969696;
+    margin-top: 2em;
+}
+
+.Frame3-Image {
+    margin-top: 3em;
+    
+
+}
+
+.Frame3-Button {
+    color: #FFF;
+    padding: 16px 24px;
+    font-weight: 600;
+    font-size: 1.5em;
+    border-radius: 8px;
+    border-radius: 8px;
+    background: #3777FF;
+
+
+    border: none;
+    margin-top: 3em;
+}
+
+
