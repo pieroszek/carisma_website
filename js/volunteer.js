@@ -68,11 +68,11 @@ document.getElementById('submitData').addEventListener('click', function() {
             if (xhr.status >= 200 && xhr.status < 400) {
                 alert(xhr.responseText);
             } else {
-                alert("Error: Unable to submit data.");
+                alert("Error: Unable to submit data. line 71");
             }
         };
         xhr.onerror = function () {
-            alert("Error: Unable to submit data.");
+            alert("Error: Unable to submit data. line 75");
         };
         xhr.send(`selectedOption=${selectedOption}&inputValue=${inputValue}`);
     } else {
