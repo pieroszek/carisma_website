@@ -51,4 +51,22 @@
 
 }
 
+/* .Frame1-Volunteer {
+    background-color: #3777FF;
+    color: #FFF;
+    padding: 16px 24px;
+
+    margin-bottom: 3em;
+} */
+
+.Frame5-Button:hover {
+
+    background-color: #2b6dfc;
+    /* color: #FFF; */
+}
+
+.Frame5-Button:active {
+    background-color: #2359cd;
+
+}
 

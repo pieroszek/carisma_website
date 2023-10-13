@@ -1,5 +1,38 @@
 // this is the main js file, im not one for syntactic sugar
 
+document.addEventListener("DOMContentLoaded", function() {
+    const button = document.querySelector(".content-option-button");
+    const innerDiv = button.querySelector(".option-box");
+
+    let isActive = false; // Variable to track the active state
+
+    button.addEventListener("click", function() {
+        isActive = !isActive; // Toggle the state
+
+        if (isActive) {
+            innerDiv.style.backgroundColor = "#808080"; // Set background color when active
+        } else {
+            innerDiv.style.backgroundColor = "#FFF"; // Set default background color
+        }
+    });
+});
+
+
+
+
+
+// for the about us section append
+
+document.getElementById("See_More").addEventListener("click", function() {
+    var section = document.getElementById("AboutUsAppend");
+    section.classList.toggle("Frame5-More");
+});
+
+
+
+
+
+
 
 let scrollPosition = 0;
 
@@ -73,3 +106,8 @@ document.getElementById('About').addEventListener('click', function() {
     document.getElementById('Frame5').scrollIntoView({ behavior: 'smooth' });
 });
 
+
+// vol button on landing page
+document.getElementById('Landing_Sign_Up').addEventListener('click', function() {
+    document.getElementById('Frame3').scrollIntoView({ behavior: 'smooth' });
+});

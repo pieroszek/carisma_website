@@ -39,3 +39,67 @@ body.modal-open {
     overflow: hidden; 
     /* This somehow makes the stop scroll not break everything */
 }
+
+.content-Stores {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 11; */
+
+}
+
+/* .content-Stores button {
+    background: none;
+
+} */
+
+
+.content-option {
+    color: grey;
+}
+
+.content-option-button{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    gap: 1em;
+}
+
+.option-box {
+    border: 0.2em solid #808080;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 1em;
+    /* pointer-events: none; */
+    background-color:  #fff;
+}
+
+.option-box.active {
+    background-color: grey;
+}
+
+
+.content-option p {
+    color: grey;
+}
+
+/* .content-option-box {
+    height: 2em;
+    width: 2em;
+    border-radius: .5em;
+    border-color: grey;
+
+} */
+
+/* .clickedButton {
+ background-color: grey;
+}
+
+.clickableButton {
+    background-color: none;
+} */
+
+/* .content-option-text {
+    border: none;
+
+} */
