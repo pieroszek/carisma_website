@@ -54,7 +54,8 @@ body.modal-open {
 
 
 .content-option {
-    color: grey;
+    /* color: grey; */
+    display: grid ;
 }
 
 .content-option-button{
@@ -63,6 +64,8 @@ body.modal-open {
     background: none;
     border: none;
     gap: 1em;
+    color: grey;
+
 }
 
 .option-box {
@@ -103,3 +106,7 @@ body.modal-open {
     border: none;
 
 } */
+
+#modal-buttons-title {
+    color: black;
+}
