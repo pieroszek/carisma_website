@@ -47,15 +47,29 @@ body.modal-open {
 
 }
 
+.content-OnTheGo {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 11; */
+
+}
+
+.content-FromHome {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
 /* .content-Stores button {
     background: none;
 
 } */
 
 
-.content-option {
-    /* color: grey; */
-    display: grid ;
+.content-option{
+    color: grey;
+    gap: 1em;
+    /* display: grid ; */
 }
 
 .content-option-button{
