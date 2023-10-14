@@ -25,6 +25,13 @@
     text-align: left;
 }
 
+
+.modal-content-Options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60em;
+}
+
 #closeModal {
     padding: 10px 20px;
     background-color: #007BFF;
@@ -40,37 +47,10 @@ body.modal-open {
     /* This somehow makes the stop scroll not break everything */
 }
 
-.content-Stores {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* grid-template-rows: 11; */
-
-}
-
-.content-OnTheGo {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* grid-template-rows: 11; */
-
-}
-
-.content-FromHome {
-    display: grid;
-    grid-template-columns: 1fr;
-}
 
 
-/* .content-Stores button {
-    background: none;
-
-} */
 
 
-.content-option{
-    color: grey;
-    gap: 1em;
-    /* display: grid ; */
-}
 
 .content-option-button{
     display: flex;
@@ -91,36 +71,9 @@ body.modal-open {
     background-color:  #fff;
 }
 
-.option-box.active {
-    background-color: grey;
-}
 
 
 .content-option p {
     color: grey;
 }
 
-/* .content-option-box {
-    height: 2em;
-    width: 2em;
-    border-radius: .5em;
-    border-color: grey;
-
-} */
-
-/* .clickedButton {
- background-color: grey;
-}
-
-.clickableButton {
-    background-color: none;
-} */
-
-/* .content-option-text {
-    border: none;
-
-} */
-
-#modal-buttons-title {
-    color: black;
-}
