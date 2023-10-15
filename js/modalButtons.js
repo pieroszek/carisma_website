@@ -15,6 +15,32 @@
 //     });
 // });
 
+
+// Define a global object to hold button states
+const buttonStates = {
+    button1: false,
+    button2: false
+};
+
+// Function to toggle button state
+function toggleButtonState(buttonId) {
+    buttonStates[buttonId] = !buttonStates[buttonId];
+    console.log(buttonStates);
+}
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const textBox = document.getElementById("SuggestionsBox");
+
+    textBox.addEventListener("input", function() {
+        const userInput = textBox.value;
+        console.log(userInput);
+    });
+});
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const button = document.getElementById("MB1"); // Replace "your-button-id" with the actual ID of your button
     const innerDiv = document.getElementById("BB1"); // Replace "your-inner-div-id" with the actual ID of your inner div
@@ -96,4 +122,37 @@ document.addEventListener("DOMContentLoaded", function() {
 // });
 
 
-// 
+
+
+// // // document.addEventListener("DOMContentLoaded", function() {
+// // //     const buttons = document.querySelectorAll("button");
+
+// // //     buttons.forEach(button => {
+// // //         button.addEventListener("click", function() {
+// // //             const buttonId = this.id;
+// // //             toggleButtonState(buttonId);
+// // //         });
+// // //     });
+
+// // //     const submitButton = document.getElementById("submitButton");
+
+// // //     submitButton.addEventListener("click", function() {
+// // //         const input1 = document.getElementById("input1").value;
+// // //         const input2 = document.getElementById("input2").value;
+
+// // //         const dataObject = {
+// // //             input1: input1,
+// // //             input2: input2,
+// // //             buttonStates: buttonStates
+// // //         };
+
+// // //         sendDataToPHP(dataObject);
+// // //     });
+// // // });
+
+
+// // // function sendDataToPHP(data) {
+// // //     // ...
+// // //     // (Rest of the sendDataToPHP function remains the same)
+// // //     // ...
+// // // }

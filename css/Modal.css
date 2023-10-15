@@ -25,11 +25,15 @@
     text-align: left;
 }
 
+.options-Stores {
+    gap: 1.6em;
+}
 
 .modal-content-Options {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 60em;
+    width: 50em;
+    margin-top: 2em;
 }
 
 #closeModal {
@@ -48,9 +52,22 @@ body.modal-open {
 }
 
 
+#SuggestionsBox {
+    border-color: #fff;
+    border: 0.2em solid grey;
+    border-radius: .5em;
+    padding: 0.3em;
+
+    margin: 1em;
+    margin-left: 0;
+}
 
 
-
+#SuggestionsText {
+    margin: 1em;
+    margin-left: 0;
+    margin-bottom: 0;
+}
 
 .content-option-button{
     display: flex;
@@ -59,7 +76,7 @@ body.modal-open {
     border: none;
     gap: 1em;
     color: grey;
-
+    margin-top: 1em;
 }
 
 .option-box {
@@ -71,9 +88,44 @@ body.modal-open {
     background-color:  #fff;
 }
 
+.options-FromHome {
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
 
 
 .content-option p {
     color: grey;
 }
 
+
+
+.modal-content-Contact {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    width: 50em;
+    margin-top: 2em;
+}
+
+.contact-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 10em;
+
+}
+
+.modal-contact-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.location-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 20em;
+    height: 20em;
+}
+
+/* .text-field {
+
+} */
