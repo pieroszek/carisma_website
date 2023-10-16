@@ -52,9 +52,20 @@ body.modal-open {
 }
 
 
-#SuggestionsBox {
+#SuggestionsBox1 { 
+    /* This one is for the text box in the from home */
     border-color: #fff;
     border: 0.2em solid grey;
+    border-radius: .5em;
+    padding: 0.3em;
+
+    margin: 1em;
+    margin-left: 0;
+}
+
+#SuggestionsBox {
+    border-color: #fff;
+    /* border: 0.2em solid grey; */
     border-radius: .5em;
     padding: 0.3em;
 
@@ -129,3 +140,19 @@ body.modal-open {
 /* .text-field {
 
 } */
+
+.modal-content-submit {
+    margin-left: 90%;
+}
+
+.modal-submit-button {
+    color: #FFF;
+    padding: 16px 24px;
+    font-weight: 600;
+    font-size: 1.5em;
+    border-radius: 8px;
+    border-radius: 8px;
+    background: #78A632;
+    border: none;
+    margin-top: 3em;
+}
