@@ -1,47 +1,62 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-// if ($_SERVER["REQUEST_METHOD"] === "POST") {
-//     $selectedOption = $_POST["selectedOption"];
-//     $inputValue = $_POST["inputValue"];
 
-//     // Here, you can send an email using PHP's mail() function
-//     // Make sure to replace the placeholders below with actual email addresses
-//     $to = "m4ksyn@gmail.com";
-//     $subject = "Data from Modal";
-//     $message = "Selected Option: $selectedOption\nInput Value: $inputValue";
-//     $headers = "From: webmaster@example.com";
+// $userInput = json_decode(file_get_contents('php://input'), true);
 
-//     if (mail($to, $subject, $message, $headers)) {
-//         echo "Data submitted successfully!";
-//     } else {
-//         echo "Error sending email. Please try again later.";
-//     }
+// $name = $userInput['name'];
+// $email = $userInput['email'];
+// $message = $userInput['message'];
+
+// // Construct the email message
+// $to = 'recipient@example.com';
+// $subject = 'Contact Form Submission';
+// $body = "Name: $name\n";
+// $body .= "Email: $email\n";
+// $body .= "Message:\n$message";
+
+// // Send the email
+// $headers = "From: $email";
+// $mailSent = mail($to, $subject, $body, $headers);
+
+// if ($mailSent) {
+//     echo json_encode(["message" => "Email sent successfully"]);
 // } else {
-//     echo "Invalid request.";
+//     echo json_encode(["error" => "Error sending email"]);
 // }
 
+$inputData = json_decode(file_get_contents('php://input'), true);
 
 
-// if (mail($to, $subject, $message, $headers)) {
-//     echo "Data submitted successfully!";
-// } else {
-//     echo "Error sending email. Please try again later. Error: " . error_get_last()['message'];
-// }
+if (isset($_POST['Name']) && isset($_POST['Surname']) && isset($_POST['Phone'])) {
+    $name = $_POST['Name'];
+    $surname = $_POST['Surname'];
+    $phone = $_POST['Phone'];
 
-// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//     $clickedButtonId = $_POST['buttonClicked'];
-//     // Now you have the ID of the clicked button, you can process it further.
-//     // For example, you can save it to a database, perform some actions, etc.
-//     // Then, you can send a response back to the JavaScript if needed.
-//     echo json_encode(['message' => 'Button clicked successfully']);
-// }
-// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//     $button1State = $_POST['button1State'];
-//     echo json_encode(['button1State' => $button1State]);
-// }
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $button1State = $_POST['button1State'];
-    echo json_encode(['button1State' => $button1State]);
+    // Process the data (e.g., send it in an email, save to a database, etc.)
+
+    echo json_encode(["message" => "Received user input: Name=$Name, Surname=$Surname, Phone=$Phone"]);
+} else {
+    echo json_encode(["error" => "Incomplete user input received."]);
 }
+
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+file_put_contents(__DIR__ . '/input_data.log', print_r($inputData, true), FILE_APPEND);
+
+// file_put_contents('input_data.log', print_r($inputData, true), FILE_APPEND);
+
+
+// if (isset($_POST['userInput'])) {
+//     $userInput = $_POST['userInput'];
+
+//     // Do something with $userInput (e.g., send it in an email)
+//     // For now, let's just send it back to JavaScript
+
+//     echo json_encode(["message" => "Received user input: " . $userInput]);
+// } else {
+//     echo json_encode(["error" => "No user input received."]);
+// }
 
 ?>
