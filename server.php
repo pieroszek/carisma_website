@@ -1,62 +1,45 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php';
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
+try {
+        // ... your PHPMailer code ...
+    $mail = new PHPMailer(true);
+    try {
+        //Server settings
+        $mail->isSMTP();                                           
+        $mail->Host       = 'smtp.gmail.com';                    
+        $mail->SMTPAuth   = true;                                   
+        $mail->Username   = 'm4ksyn@gmail.com';                 
+        $mail->Password   = 'M4xmaxmax';                           
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;        
+        $mail->Port       = 587;                                    
+
+        //Recipients
+        $mail->setFrom('m4ksyn@gmail.com', 'Sender');
+        $mail->addAddress('max@altramanera.app', 'Recipient');     
+
+        // Content
+        $mail->isHTML(true);                                 
+        $mail->Subject = 'Subject Here';
+        $mail->Body    = 'Body of the email here';
+
+        $mail->send();
+        echo 'Email has been sent successfully';
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
 
 
-// $userInput = json_decode(file_get_contents('php://input'), true);
-
-// $name = $userInput['name'];
-// $email = $userInput['email'];
-// $message = $userInput['message'];
-
-// // Construct the email message
-// $to = 'recipient@example.com';
-// $subject = 'Contact Form Submission';
-// $body = "Name: $name\n";
-// $body .= "Email: $email\n";
-// $body .= "Message:\n$message";
-
-// // Send the email
-// $headers = "From: $email";
-// $mailSent = mail($to, $subject, $body, $headers);
-
-// if ($mailSent) {
-//     echo json_encode(["message" => "Email sent successfully"]);
-// } else {
-//     echo json_encode(["error" => "Error sending email"]);
-// }
-
-$inputData = json_decode(file_get_contents('php://input'), true);
-
-
-if (isset($_POST['Name']) && isset($_POST['Surname']) && isset($_POST['Phone'])) {
-    $name = $_POST['Name'];
-    $surname = $_POST['Surname'];
-    $phone = $_POST['Phone'];
-
-    // Process the data (e.g., send it in an email, save to a database, etc.)
-
-    echo json_encode(["message" => "Received user input: Name=$Name, Surname=$Surname, Phone=$Phone"]);
-} else {
-    echo json_encode(["error" => "Incomplete user input received."]);
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$e->getMessage()}";
 }
 
-// error_reporting(E_ALL);
-// ini_set('display_errors', 1);
-file_put_contents(__DIR__ . '/input_data.log', print_r($inputData, true), FILE_APPEND);
-
-// file_put_contents('input_data.log', print_r($inputData, true), FILE_APPEND);
-
-
-// if (isset($_POST['userInput'])) {
-//     $userInput = $_POST['userInput'];
-
-//     // Do something with $userInput (e.g., send it in an email)
-//     // For now, let's just send it back to JavaScript
-
-//     echo json_encode(["message" => "Received user input: " . $userInput]);
-// } else {
-//     echo json_encode(["error" => "No user input received."]);
-// }
 
 ?>

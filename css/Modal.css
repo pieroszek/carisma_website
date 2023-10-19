@@ -4,9 +4,10 @@
     border-radius: .5em;
     padding: 20px;
     background-color: #fff;
-    width: 103.125em;
+    width: 60.125em;
     margin: auto;
     text-align: center ;
+    padding-left: 2em;
 }
 
 .Modal1::backdrop {
@@ -49,6 +50,8 @@
     border-radius: 5px;
     cursor: pointer;
     /* margin-top: 10px; */
+    /* position: fixed;
+    margin-left: 50%; */
 }
 
 body.modal-open {
