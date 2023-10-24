@@ -8,8 +8,11 @@ require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
+$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+
+
 try {
-        // ... your PHPMailer code ...
+       
     $mail = new PHPMailer(true);
     try {
         //Server settings
@@ -40,6 +43,7 @@ try {
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$e->getMessage()}";
 }
+
 
 
 ?>
