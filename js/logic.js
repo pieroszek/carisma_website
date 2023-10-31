@@ -41,30 +41,30 @@ function enableScroll() {
 
 
   
-// Get the dialog element and the button to close it
-const myModal = document.getElementById('Modal');
-const closeModalButton = document.getElementById('closeModal');
+// // Get the dialog element and the button to close it
+// const myModal = document.getElementById('Modal');
+// const closeModalButton = document.getElementById('closeModal');
 
-// Show the modal
-function showModal() {
-    myModal.showModal();
-    disableScroll();
-    document.body.classList.add('modal-open');
+// // Show the modal
+// function showModal() {
+//     myModal.showModal();
+//     disableScroll();
+//     document.body.classList.add('modal-open');
 
-}
+// }
 
-// Close the modal
-function closeModal() {
-    myModal.close();
-    enableScroll();
-    document.body.classList.remove('modal-open');
+// // Close the modal
+// function closeModal() {
+//     myModal.close();
+//     enableScroll();
+//     document.body.classList.remove('modal-open');
 
-}
+// }
 
-// Add an event listener to the close button
-closeModalButton.addEventListener('click', closeModal);
+// // Add an event listener to the close button
+// closeModalButton.addEventListener('click', closeModal);
 
-openModalButton.addEventListener('click', showModal);
+// openModalButton.addEventListener('click', showModal);
 
 
 // 
