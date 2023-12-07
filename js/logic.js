@@ -93,3 +93,12 @@ document.getElementById('About').addEventListener('click', function() {
 document.getElementById('Landing_Sign_Up').addEventListener('click', function() {
     document.getElementById('Frame3').scrollIntoView({ behavior: 'smooth' });
 });
+
+
+// chanve lang dropdown
+
+function changeLanguage() {
+    var selectedLanguage = document.getElementById("Lang").value;
+    var url = "index-" + selectedLanguage + ".html";
+    window.location.href = url;
+}
