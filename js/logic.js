@@ -126,3 +126,12 @@ document.getElementById("VolContact").addEventListener("click", function() {
     var section = document.getElementById("VolContactFrame");
     section.classList.toggle("Frame3-VolContact");
 });
+
+document.getElementById("Donations").addEventListener("click", function() {
+    var section = document.getElementById("Fram4-Container1Text");
+    var section2 = document.getElementById("DonationsInfo");
+
+    section.classList.toggle("Fram4-Container1Text");
+    section2.classList.toggle("Fram4-Container1Text");
+
+});
