@@ -57,6 +57,20 @@
     margin-top: 3em;
 }
 
+.Frame3-CopyButton {
+    color: #FFF;
+    padding: 14px 22px;
+    font-weight: 600;
+    font-size: 1em;
+    border-radius: 8px;
+    border-radius: 8px;
+    background: #3777FF;
+
+
+    border: none;
+    /* margin-top: 3em; */
+}
+
 .Frame3-Button:hover {
 
     background-color: #2b6dfc;
@@ -68,3 +82,16 @@
 
 }
 
+.Frame3-VolContact{
+    display: none;
+}
+
+#emailTemplate {
+    width: 95%;
+    height: 250px;
+    resize: none; /* Disable resizing */
+}
+
+#copyButton {
+    margin-top: 5px;
+}

@@ -103,3 +103,26 @@ function changeLanguage() {
 
 }
 
+function copyToClipboard() {
+    var emailTemplate = document.getElementById("emailTemplate");
+    
+    // Select the text in the textarea
+    emailTemplate.select();
+    emailTemplate.setSelectionRange(0, 99999); // For mobile devices
+    
+    // Copy the text to the clipboard
+    document.execCommand("copy");
+
+    // Deselect the text
+    window.getSelection().removeAllRanges();
+
+    // Optionally, provide some feedback to the user
+    // alert("Template copied to clipboard!");
+}
+
+
+// volunteer contact button
+document.getElementById("VolContact").addEventListener("click", function() {
+    var section = document.getElementById("VolContactFrame");
+    section.classList.toggle("Frame3-VolContact");
+});

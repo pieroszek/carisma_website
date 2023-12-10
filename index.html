@@ -201,12 +201,37 @@
             </div>
         </div>
 
+
         <div class="Frame3-Image">
             <img src="public/images/group_illustration.png" alt="Sign up illustration... community">
         </div>
 
-        <button id="openModalButton" class="Frame3-Button">
-            <p>Sign up</p>
+        <div class="Frame3-VolContact" id="VolContactFrame">
+            <h3>We accept aplications via Email</h3>
+            
+            <textarea id="emailTemplate" readonly>
+                Dear Carisma,
+                
+                This is my volunteering aplication,
+                Name:
+                Last Name:
+                Telephone:
+                Email:
+                Availability:
+                Which store is most convinient:
+                What Role would you prefer:
+
+                
+                Best Regards,
+                Name:
+            </textarea>
+                
+            <button class="Frame3-CopyButton" onclick="copyToClipboard()">Copy Template</button>
+
+        </div>
+
+        <button id="VolContact" class="Frame3-Button">
+            <p>Contact us</p>
         </button>
 
 
@@ -424,16 +449,11 @@
                 </div>
             </button>
 
-            <!-- <button class="Frame4-Container-Item">
-                <div class="Frame4-Item-Image">
-                    <img src="public/images/circle_image_2.png" alt="">
-                </div>
+            <div class="Fram4-Container1Text">
+                <p>We always need high-quality items to sell in our stores. So, if you no longer need something, don't throw it away! Donate items you no longer need to our charity shops. We can even pick up large furniture.</p>
+            </div>
 
-                <div class="Frame4-Item-Text">
-                    <p>buy</p>
-                </div>
-            </button> -->
-            
+
             <button class="Frame4-Container-Item">
                 <div class="Frame4-Item-Image">
                     <img src="public/images/circle_image_2.png" alt="">
