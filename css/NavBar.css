@@ -71,3 +71,20 @@
     text-align: center;
     
 }
+
+/* Style the dropdown */
+#lang {
+    background-color: #FFF;
+    padding: 0.5em 0.5em 0.5em;
+    margin-right: 3em;
+    /* gap: 1em; */
+    border: none;
+}
+
+/* Style the dropdown options */
+#lang option {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 120%;  
+    text-align: center;
+}

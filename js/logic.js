@@ -95,10 +95,11 @@ document.getElementById('Landing_Sign_Up').addEventListener('click', function() 
 });
 
 
-// chanve lang dropdown
-
+// lagnuage dropdown logic
 function changeLanguage() {
     var selectedLanguage = document.getElementById("Lang").value;
     var url = "index-" + selectedLanguage + ".html";
     window.location.href = url;
+
 }
+
