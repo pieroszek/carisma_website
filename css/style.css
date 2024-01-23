@@ -4,3 +4,15 @@
     box-sizing: border-box;
     font-family: Tahoma;
 }
+
+@media only screen and (max-width: 600px) {
+    /* Styles for screens up to 600px wide (for mobile, usually) */
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for screens between 601px and 1024px wide (for tablets, maybe) */
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    /* Styles for screens 1025px wide and above (for desktops) */
+  }
