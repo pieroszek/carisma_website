@@ -1,4 +1,5 @@
 # Carisma Charity Shop Website
+Please note that i am missing up to date info to finish the website, so a big chunk of the project is subject to change (design wise). 
 
 About This Project
 This project showcases a static website developed from scratch for the Carisma charity shop chain based in Andorra. As part of my academic requirements, I engaged in volunteering and chose to extend my contribution by developing a practical tool. This website aims to support Carisma's mission by enhancing their online presence and accessibility, serving as a tangible asset to aid their charitable activities.
