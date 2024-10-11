@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carisma</title>
+    <link rel="icon" href="public/images/carismaLogo_1.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/NavBar.css">
+    <link rel="stylesheet" href="css/Frame1.css">
+    <link rel="stylesheet" href="css/Frame2.css">
+    <link rel="stylesheet" href="css/Frame3.css">
+    <link rel="stylesheet" href="css/Frame4.css">
+    <link rel="stylesheet" href="css/Frame5.css">
+    <link rel="stylesheet" href="css/Frame5_AboutUs.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/Modal.css">
+
+</head>
+<body>
+
+    <div class="NavBar">
+        <div class="Nav-Logo">
+            <div class="Nav-Logo-Img">
+                <img src="public/images/carismaLogo_1.svg" alt="Logo">
+            </div>
+
+            <div class="Nav-Logo-Text">
+                <p>carisma</p>
+            </div>
+        </div>
+
+        <div class="Nav-Menu">
+            <button id="Store" class="Nav-Item">
+                <p>Tiendas</p>
+            </button>
+            <button id="Volunteer" class="Nav-Item">
+                <p>Volunteer</p>
+            </button>
+            <button id="Donate" class="Nav-Item">
+                <p>Donate</p>
+            </button>
+            <button id="About" class="Nav-Item">
+                <p>About us</p>
+            </button>
+            <select id="Lang" class="Nav-Item" onchange="changeLanguage()">
+                <option value="en">en</option>
+                <option value="fr">fr</option>
+                <option value="es" selected>es</option>
+                <option value="cat">cat</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="Frame1" class="Frame1">
+        <div class="Frame1-Container">
+            <div class="Frame1-Text">
+                <p>We have charity shops,
+                    supporting local communities,
+                    a great place to Volunteer.</p>
+            </div>
+
+            <div class="Frame1-Button">
+                <button  id="Landing_Sign_Up" class="Frame1-Volunteer">
+                    <p>Volunteer</p>
+                </button>
+            </div>
+
+            <div class="Frame1-SubText">
+                <p>Visit our stores</p>
+            </div>
+
+            <div class="Frame1-greenArrow">
+                <img src="public/images/arrow-1.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="Frame2" class="Frame2">
+        <div class="Frame2-Header">
+            <div class="Frame2-Header-SubTitle">
+                <p>Stores</p>
+            </div>
+
+            <div class="Frame2-Header-Title">
+                <p>Locations & Schedule</p>
+            </div>
+
+        </div>
+
+        <div class="Frame2-Grid">
+
+            <div class="Frame2-Item">
+                <div class="Frame2-Item-Image">
+                    <img src="public/images/storeMap_PlaceHolder.png" alt="">
+                </div>
+                <div class="Frame2-Item-Info">
+                    
+                    <div class="Frame2-Info-H1">
+                        <p>Aldosa</p>
+                    </div>
+
+                    <div class="Frame2-Info-H2">
+                        <p>Carrer prada fonta sansa 32</p>
+                    </div>
+
+                    <div class="Frame2-Info-H3">
+                        <p>Mon-Fri: 10am to 8pm</p>
+                        <p>Sat: 13am to 16pm</p>
+                        <p>Sun: closed</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="Frame2-Item">
+                <div class="Frame2-Item-Image">
+                    <img src="public/images/storeMap_PlaceHolder.png" alt="">
+                </div>
+                <div class="Frame2-Item-Info">
+                    
+                    <div class="Frame2-Info-H1">
+                        <p>La Massana</p>
+                    </div>
+
+                    <div class="Frame2-Info-H2">
+                        <p>Carrer prada fonta sansa 32</p>
+                    </div>
+
+                    <div class="Frame2-Info-H3">
+                        <p>Mon-Fri: 10am to 8pm</p>
+                        <p>Sat: 13am to 16pm</p>
+                        <p>Sun: closed</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="Frame2-Item">
+                <div class="Frame2-Item-Image">
+                    <img src="public/images/storeMap_PlaceHolder.png" alt="">
+                </div>
+                <div class="Frame2-Item-Info">
+                    
+                    <div class="Frame2-Info-H1">
+                        <p>La Vella</p>
+                    </div>
+
+                    <div class="Frame2-Info-H2">
+                        <p>Carrer prada fonta sansa 32</p>
+                    </div>
+
+                    <div class="Frame2-Info-H3">
+                        <p>Mon-Fri: 10am to 8pm</p>
+                        <p>Sat: 13am to 16pm</p>
+                        <p>Sun: closed</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="Frame2-Item">
+                <div class="Frame2-Item-Image">
+                    <img src="public/images/storeMap_PlaceHolder.png" alt="">
+                </div>
+                <div class="Frame2-Item-Info">
+                    
+                    <div class="Frame2-Info-H1">
+                        <p>Sant Julia</p>
+                    </div>
+
+                    <div class="Frame2-Info-H2">
+                        <p>Carrer prada fonta sansa 32</p>
+                    </div>
+
+                    <div class="Frame2-Info-H3">
+                        <p>Mon-Fri: 10am to 8pm</p>
+                        <p>Sat: 13am to 16pm</p>
+                        <p>Sun: closed</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="Frame3" class="Frame3">
+        <div class="Frame3-Header">
+            <div class="Frame3-Header-SubTitle">
+                <p>Volunteer</p>
+            </div>
+
+            <div class="Frame3-Header-Title">
+                <p>Help out however you can!</p>
+            </div>
+
+            <div class="Frame3-Header-UnderText">
+                <p>Consider supporting a community</p>
+            </div>
+        </div>
+
+        <div class="Frame3-Image">
+            <img src="public/images/group_illustration.png" alt="Sign up illustration... community">
+        </div>
+
+        <button id="openModalButton" class="Frame3-Button">
+            <p>Sign up</p>
+        </button>
+
+
+        <!-- <dialog id="Modal" class="Modal1"> 
+            <div class="modal-header">
+                <h2>Become a Volunteer</h2>
+                <button id="closeModal">X</button>
+            </div>
+
+            <div class="modal-content">
+                <h1>How would you like to contribute?</h1>
+
+                <div class="modal-content-Options">
+
+                    <div class="options-Stores">
+                        <h2>Stores</h2>
+                        <button id="MB1" class="content-option-button">
+                            <div class="option-box"></div>
+                            Organize donations that arrive at the stores
+                        </button>
+                        <button id="MB1" class="content-option-button">
+                            <div class="option-box"></div>
+                            Weigh Donations
+                        </button>
+                        <button id="MB1" class="content-option-button">
+                            <div class="option-box"></div>
+                            Attend clients find what they are looking for
+                        </button>
+                        <button id="MB1" class="content-option-button">
+                            <div class="option-box"></div>
+                            Attend clients to move / measure articles
+                        </button>
+                        <button id="MB1" class="content-option-button">
+                            <div class="option-box"></div>
+                            Clean and put in order the articles
+                        </button>
+                        <button id="MB1" class="content-option-button">
+                            <div class="option-box"></div>
+                            Take photos of the articles and put on a price
+                        </button>
+                        <button id="MB1" class="content-option-button">
+                            <div class="option-box"></div>
+                            Clean and put in order the store
+                        </button>
+                        <button id="MB1" class="content-option-button">
+                            <div class="option-box"></div>
+                            Order de book / DVD / CD section
+                        </button>
+                        <button id="MB1" class="content-option-button">
+                            <div class="option-box"></div>
+                            Test if the electronics work
+                        </button>
+                        <button id="MB1" class="content-option-button">
+                            <div class="option-box"></div>
+                            Make small repairs to the electronics
+                        </button>
+                        <button id="MB1" class="content-option-button">
+                            <div class="option-box"></div>
+                            Help to find a better layout / distribution in the store
+                        </button>
+                    </div>
+
+
+                    <div class="options-Gohome">
+                        <div class="options-OnTheGo"> 
+                            <h2>On The Go</h2>
+                            <button id="MB1" class="content-option-button">
+                                <div class="option-box"></div>
+                                Help pickup and donations
+                            </button>
+                            <button id="MB1" class="content-option-button">
+                                <div class="option-box"></div>
+                                Visit donators to evaluate and make photos
+                            </button>
+                            <button id="MB1" class="content-option-button">
+                                <div class="option-box"></div>
+                                Distribute publicity or Get in contact with Agency's
+                            </button>
+                            <button id="MB1" class="content-option-button">
+                                <div class="option-box"></div>
+                                Interview people over there knowledge about Carisma
+                            </button>
+                        </div>
+
+                        <div class="options-FromHome">
+                            <h2>From Home</h2>
+                            <button id="MB1" class="content-option-button">
+                                <div class="option-box"></div>
+                                Help online with socials and I.T in general
+                            </button>
+                            <button id="MB1" class="content-option-button">
+                                <div class="option-box"></div>
+                                Give ideas about how to recicle / reuse articles
+                            </button>
+
+                            <p id="SuggestionsText">Suggestions</p>
+                            <input type="text" id="SuggestionsBox1">
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-content-Contact">
+                        
+                        <h1>How can we contact you?</h1>
+
+                    <div class="modal-contact-fields">
+                    
+                        <div class="contact-fields">
+
+                            <div id="SuggestionsBox" class="text-field">
+                                <p id="SuggestionsText">Name</p>
+                                <input type="text" id="Name">
+                            </div>
+
+                            <div id="SuggestionsBox"  class="text-field">
+                                <p id="SuggestionsText">Surname</p>
+                                <input type="text" id="Surname">
+                            </div>
+
+
+                            <div id="SuggestionsBox" class="text-field">
+                                <p id="SuggestionsText">Phone</p>
+                                <input type="text" id="Phone">
+                            </div>
+
+
+                            <div id="SuggestionsBox" class="text-field">
+                                <p id="SuggestionsText">Email</p>
+                                <input type="text" id="Email">
+                            </div>
+
+
+                            <div id="SuggestionsBox" class="text-field">
+                                <p id="SuggestionsText">Whatsapp?</p>
+                                <input type="text" id="Whatsapp">
+                            </div>
+
+
+                            <div id="SuggestionsBox" class="text-field">
+                                <p id="SuggestionsText">Availability</p>
+                                <input type="text" id="Availability">
+                            </div>
+                        </div>
+
+                        <div class="location-fields">
+                            <button id="LB1" class="content-option-button">
+                                <div class="option-box"></div>
+                                Aldosa
+                            </button>
+                            <button id="LB2" class="content-option-button">
+                                <div class="option-box"></div>
+                                La Massana
+                            </button>
+                            <button id="LB3" class="content-option-button">
+                                <div class="option-box"></div>
+                                Sant Julia
+                            </button>
+                            <button id="LB4" class="content-option-button">
+                                <div class="option-box"></div>
+                                La Vella
+                            </button>
+                        </div>
+
+
+       
+
+                    </div>
+
+                    <div class="modal-content-submit">
+                        <button id="submitButton" class="modal-submit-button">
+                            <p>Submit</p>
+                        </button>
+                    </div>
+
+    
+                </div>
+
+
+
+
+
+
+            </div>
+        </dialog> -->
+
+    </div>
+
+
+    
+    <div id="Frame4" class="Frame4">
+        <div class="Frame4-Header">
+            <div class="Frame4-Header-SubTitle">
+                <p>Donate</p>
+            </div>
+
+            <div class="Frame4-Header-Title">
+                <p>Help out however you can!</p>
+            </div>
+
+            <div class="Frame4-Header-UnderText">
+                <p>Here is how you donate things, bring them in here check the store, please bring things in a good shape.</p>
+            </div>
+        </div>
+        
+        <div class="Frame4-Container">
+            <button class="Frame4-Container-Item">
+                <div class="Frame4-Item-Image">
+                    <img src="public/images/circle_image_1.png" alt="">
+                </div>
+
+                <div class="Frame4-Item-Text">
+                    <p>donate</p>
+                </div>
+            </button>
+
+            <button class="Frame4-Container-Item">
+                <div class="Frame4-Item-Image">
+                    <img src="public/images/circle_image_2.png" alt="">
+                </div>
+
+                <div class="Frame4-Item-Text">
+                    <p>buy</p>
+                </div>
+            </button>
+            
+            <button class="Frame4-Container-Item">
+                <div class="Frame4-Item-Image">
+                    <img src="public/images/circle_image_2.png" alt="">
+                </div>
+
+                <div class="Frame4-Item-Text">
+                    <p>donations info</p>
+                </div>
+            </button>
+
+        </div>
+
+
+    </div>
+
+    <div id="Frame5" class="Frame5">
+        <div class="Frame5-Header">
+            <div class="Frame5-Header-SubTitle">
+                <p>About us</p>
+            </div>
+
+            <div class="Frame5-Header-Title">
+                <p>Press, History and More</p>
+            </div>
+
+        </div>
+
+        <div class="Frame5-Content">
+            <img src="public/images/timeline-Spaceholder.png" alt="Timeline">
+        </div>
+
+        <div class="Frame5-Button-Container">
+            <button id="See_More" class="Frame5-Button">
+                <p>See more</p>
+            </button>
+        </div>
+
+        <div id="AboutUsAppend" class="Frame5-More">
+            <div class="Frame5-More-Mission">
+                <div class="More-Title">
+                    <p>About us</p>
+                    <h1>Our Mission</h1>
+                </div>
+            
+                <div class="More-Mission-Text">
+                    Nuestro objetivo es contribuir al bienestar social de Andorra con los beneficios de nuestras tiendas para ofrecer apoyo a entidades sin fines de lucro con un enfoque especial en la capacitación y el empleo para personas en una situación de necesidad social y en temas ambientales. Además, nuestro objetivo es promover el bienestar ambiental mediante la reducción del desperdicio y el ahorro de recursos a través del reciclaje, la reutilización y el reciclaje.
+                </div>
+
+            </div>
+
+            <div class="Frame5-More-Press">
+                <div class="More-Title">
+                    <p>News</p>
+                    <h1>Press</h1>
+                </div>
+
+                <div class="More-Press-Text">
+                    Nuestro objetivo es contribuir al bienestar social de Andorra con los beneficios de nuestras tiendas para ofrecer apoyo a entidades sin fines de lucro con un enfoque especial en la capacitación y el empleo para personas en una situación de necesidad social y en temas ambientales. Además, nuestro objetivo es promover el bienestar ambiental mediante la reducción del desperdicio y el ahorro de recursos a través del reciclaje, la reutilización y el reciclaje.
+                </div>
+            </div>
+
+            <div class="Frame5-More-History">
+                <div class="More-Title">
+                    <p>History</p>
+                    <h1>Our Story</h1>
+                </div>
+
+                <div class="More-History-Text">
+                    Nuestro objetivo es contribuir al bienestar social de Andorra con los beneficios de nuestras tiendas para ofrecer apoyo a entidades sin fines de lucro con un enfoque especial en la capacitación y el empleo para personas en una situación de necesidad social y en temas ambientales. Además, nuestro objetivo es promover el bienestar ambiental mediante la reducción del desperdicio y el ahorro de recursos a través del reciclaje, la reutilización y el reciclaje.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Footer">
+        <div class="Top-Text">
+            <p>To Donate items or volunteer, contact us at the main shop in la Massana in the Comú building</p>
+        </div>
+
+        <div class="Contact-Info">
+            <div class="Email">
+                <img src="public/images/email_icon.png" alt="email icon"> 
+                <!-- the idea with the img tags is to add an icon -->
+                <p>carismaandorra@gmail.com</p>
+            </div>
+
+            <div class="Phone">
+                <img src="public/images/phone-icon-1.png" alt="phone icon">
+                <p>+376 346 244</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/logic.js"></script>
+    <script src="js/volunteer.js"></script>
+    <script src="js/modalButtons.js"></script>
+</body>
+</html>

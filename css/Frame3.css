@@ -1,0 +1,104 @@
+.Frame3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 8em;
+
+}
+
+.Frame3-Header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Frame3-Header-SubTitle {
+    color: #969696;
+
+
+    font-size: 1.5625em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.Frame3-Header-Title {
+    font-size: 2.4375em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.Frame3-Header-UnderText {
+    font-size: 1.5625em;
+    color: #969696;
+    margin-top: 2em;
+}
+
+.Frame3-Image {
+    margin-top: 3em;
+    
+
+}
+
+.Frame3-Button {
+    color: #FFF;
+    padding: 16px 24px;
+    font-weight: 600;
+    font-size: 1.5em;
+    border-radius: 8px;
+    border-radius: 8px;
+    background: #3777FF;
+
+
+    border: none;
+    margin-top: 3em;
+}
+
+.Frame3-CopyButton {
+    color: #FFF;
+    padding: 14px 22px;
+    font-weight: 600;
+    font-size: 1em;
+    border-radius: 8px;
+    border-radius: 8px;
+    background: #3777FF;
+
+
+    border: none;
+    /* margin-top: 3em; */
+}
+
+.Frame3-Button:hover {
+
+    background-color: #2b6dfc;
+    /* color: #FFF; */
+}
+
+.Frame3-Button:active {
+    background-color: #2359cd;
+
+}
+
+.Frame3-VolContact{
+    display: none;
+}
+
+#emailTemplate {
+    width: 95%;
+    height: 250px;
+    resize: none; /* Disable resizing */
+}
+
+#copyButton {
+    margin-top: 5px;
+}
+
+.Frame3-VolContact {
+    font-size: 2.4375em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carisma</title>
+    <link rel="icon" href="public/images/carismaLogo_1.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/NavBar.css">
+    <link rel="stylesheet" href="css/Frame1.css">
+    <link rel="stylesheet" href="css/Frame2.css">
+    <link rel="stylesheet" href="css/Frame3.css">
+    <link rel="stylesheet" href="css/Frame4.css">
+    <link rel="stylesheet" href="css/Frame5.css">
+    <link rel="stylesheet" href="css/Frame5_AboutUs.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/Modal.css">
+
+</head>
+<body>
+
+    <div class="NavBar">
+        <div class="Nav-Logo">
+            <div class="Nav-Logo-Img">
+                <img src="public/images/carismaLogo_1.svg" alt="Logo">
+            </div>
+
+            <div class="Nav-Logo-Text">
+                <p>carisma</p>
+            </div>
+        </div>
+
+        <div class="Nav-Menu">
+            <button id="Store" class="Nav-Item">
+                <p>Store</p>
+            </button>
+            <button id="Volunteer" class="Nav-Item">
+                <p>Volunteer</p>
+            </button>
+            <button id="Donate" class="Nav-Item">
+                <p>Donate</p>
+            </button>
+            <button id="About" class="Nav-Item">
+                <p>About us</p>
+            </button>
+            <select id="Lang" class="Nav-Item" onchange="changeLanguage()">
+                <option value="en">en</option>
+                <option value="fr">fr</option>
+                <option value="es">es</option>
+                <option value="cat">cat</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="Frame1" class="Frame1">
+        <div class="Frame1-Container">
+            <div class="Frame1-Text">
+                <p>We have charity shops,
+                    supporting local communities,
+                    a great place to Volunteer.</p>
+            </div>
+
+            <div class="Frame1-Button">
+                <button  id="Landing_Sign_Up" class="Frame1-Volunteer">
+                    <p>Volunteer</p>
+                </button>
+            </div>
+
+            <div class="Frame1-SubText">
+                <p>Visit our stores</p>
+            </div>
+
+            <div class="Frame1-greenArrow">
+                <img src="public/images/arrow-1.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="Frame2" class="Frame2">
+        <div class="Frame2-Header">
+            <div class="Frame2-Header-SubTitle">
+                <p>Stores</p>
+            </div>
+
+            <div class="Frame2-Header-Title">
+                <p>Locations & Schedule</p>
+            </div>
+
+        </div>
+
+        <div class="Frame2-Grid">
+
+            <div class="Frame2-Item">
+                <div class="Frame2-Item-Image">
+                    <img src="public/images/storeMap_PlaceHolder.png" alt="">
+                </div>
+                <div class="Frame2-Item-Info">
+                    
+                    <div class="Frame2-Info-H1">
+                        <p>Carisma Arinsal Muebles</p>
+                    </div>
+
+                    <div class="Frame2-Info-H2">
+                        <p>Crta de d'Arinsal 1, Edifici Amadeus, Arinsal</p>
+                    </div>
+
+                    <div class="Frame2-Info-H3">
+                        <p>Mon-Fri: 16:00 to 19:00</p>
+                        <p>Sat: closed</p>
+                        <p>Sun: closed</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="Frame2-Item">
+                <div class="Frame2-Item-Image">
+                    <img src="public/images/storeMap_PlaceHolder.png" alt="">
+                </div>
+                <div class="Frame2-Item-Info">
+                    
+                    <div class="Frame2-Info-H1">
+                        <p>La Massana Carisma</p>
+                    </div>
+
+                    <div class="Frame2-Info-H2">
+                        <p>Av. Sant Antoni, 29</p>
+                    </div>
+
+                    <div class="Frame2-Info-H3">
+                        <p>Mon: closed</p>
+                        <p>tue, thu, fri, sat: 10:00 to 13:30</p>
+                        <p>wed: 10:00 to 13:30 // 16:00 to 19:00</p>
+                        <p>Sun: closed</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="Frame2-Item">
+                <div class="Frame2-Item-Image">
+                    <img src="public/images/storeMap_PlaceHolder.png" alt="">
+                </div>
+                <div class="Frame2-Item-Info">
+                    
+                    <div class="Frame2-Info-H1">
+                        <p>Escaldes Carisma amb FPNSM</p>
+                    </div>
+
+                    <div class="Frame2-Info-H2">
+                        <p>Av. Fiter i Rossell 67-69</p>
+                    </div>
+
+                    <div class="Frame2-Info-H3">
+                        <p>Mon-Fri: 9:30 to 13:30 // 15:30 to 19:30</p>
+                        <p>Sat: closed</p>
+                        <p>Sun: closed</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="Frame2-Item">
+                <div class="Frame2-Item-Image">
+                    <img src="public/images/storeMap_PlaceHolder.png" alt="">
+                </div>
+                <div class="Frame2-Item-Info">
+                    
+                    <div class="Frame2-Info-H1">
+                        <p>Sant Julià Carisma amb FPNSM</p>
+                    </div>
+
+                    <div class="Frame2-Info-H2">
+                        <p>Carrer de les Escoles, 9</p>
+                    </div>
+
+                    <div class="Frame2-Info-H3">
+                        <p>Mon-Fri: 16:00 to 19:00</p>
+                        <p>Sat: closed</p>
+                        <p>Sun: closed</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="Frame3" class="Frame3">
+        <div class="Frame3-Header">
+            <div class="Frame3-Header-SubTitle">
+                <p>Volunteer</p>
+            </div>
+
+            <div class="Frame3-Header-Title">
+                <p>Help out however you can!</p>
+            </div>
+
+            <div class="Frame3-Header-UnderText">
+                <p>Sign up via Email</p>
+            </div>
+        </div>
+
+
+        <div class="Frame3-Image">
+            <img src="public/images/group_illustration.png" alt="Sign up illustration... community">
+        </div>
+
+        <div class="Frame3-VolContact" id="VolContactFrame">
+            <h2>We accept aplications via Email</h2>
+            
+            <textarea id="emailTemplate" readonly>
+                Dear Carisma,
+                
+                This is my volunteering aplication,
+                Name:
+                Last Name:
+                Telephone:
+                Email:
+                Availability:
+                Which store is most convinient:
+                What Role would you prefer:
+
+                
+                Best Regards,
+                Name:
+            </textarea>
+                
+            <button class="Frame3-CopyButton" onclick="copyToClipboard()">Copy Template</button>
+
+        </div>
+
+        <button id="VolContact" class="Frame3-Button">
+            <p>Contact us</p>
+        </button>
+
+
+
+
+    </div>
+
+
+    
+    <div id="Frame4" class="Frame4">
+        <div class="Frame4-Header">
+            <div class="Frame4-Header-SubTitle">
+                <p>Donate</p>
+            </div>
+
+            <div class="Frame4-Header-Title">
+                <p>Help out however you can!</p>
+            </div>
+
+            <div class="Frame4-Header-UnderText">
+                <p>Here is how you donate things, bring them in here check the store, please bring things in a good shape.</p>
+            </div>
+        </div>
+        
+        <div class="Frame4-Container">
+            <button class="Frame4-Container-Item"id="Donations">
+                <div class="Frame4-Item-Image">
+                    <img src="public/images/circle_image_1.png" alt="">
+                </div>
+
+                <div class="Frame4-Item-Text">
+                    <p>donate</p>
+                </div>
+            </button>
+
+
+
+            <button class="Frame4-Container-Item" id="DonationsInfo">
+                <div class="Frame4-Item-Image">
+                    <img src="public/images/circle_image_2.png" alt="">
+                </div>
+
+                <div class="Frame4-Item-Text">
+                    <p>donations info</p>
+                </div>
+            </button>
+
+        </div>
+
+
+        <!-- <div class="Fram4-Container1Text" id="Fram4-Container1Text">
+            <p>Helping others helps to reduce stress, make friends, reach out to the community, learn new skills – BE HAPPY. (Volunteering and its surprising benefits). Here are some of the ways you can help.
+
+                Donate to our shops
+                We always need good quality items to sell in our shops so if you don’t need it, don’t throw it away! Drop off your donations at our charity shops. We can collect large furniture items.
+                
+                We accept all kinds of used goods for example: Furniture, clothing, jewellery, bric-a-brac, computer games and more, so long as they are in good, reusable condition.</p>
+        </div> -->
+    </div>
+
+    <div id="Frame5" class="Frame5">
+        <div class="Frame5-Header">
+            <div class="Frame5-Header-SubTitle">
+                <p>About us</p>
+            </div>
+
+            <div class="Frame5-Header-Title">
+                <p>Press, History and More</p>
+            </div>
+
+        </div>
+
+        <div class="Frame5-Content">
+            <img src="public/images/timeline-Spaceholder.png" alt="Timeline">
+        </div>
+
+        <div class="Frame5-Button-Container">
+            <button id="See_More" class="Frame5-Button">
+                <p>See more</p>
+            </button>
+        </div>
+
+        <div id="AboutUsAppend" class="Frame5-More">
+            <div class="Frame5-More-Mission">
+                <div class="More-Title">
+                    <p>About us</p>
+                    <h1>Our Mission</h1>
+                </div>
+            
+                <div class="More-Mission-Text">
+                    <p>We aim to contribute to the social welfare of Andorra by using the profits from our stores to offer support to non-profit entities with focus especially on training and employment for people in a situation of social need and on environmental issues. In addition, we aim to promote environmental welfare by reducing waste and saving resources through recyling, reusing and upcycling.</p>
+                </div>
+
+            </div>
+
+            <!-- <div class="Frame5-More-Press">
+                <div class="More-Title">
+                    <p>News</p>
+                    <h1>Press</h1>
+                </div>
+
+                <div class="More-Press-Text">
+                    Nuestro objetivo es contribuir al bienestar social de Andorra con los beneficios de nuestras tiendas para ofrecer apoyo a entidades sin fines de lucro con un enfoque especial en la capacitación y el empleo para personas en una situación de necesidad social y en temas ambientales. Además, nuestro objetivo es promover el bienestar ambiental mediante la reducción del desperdicio y el ahorro de recursos a través del reciclaje, la reutilización y el reciclaje.
+                </div>
+            </div> -->
+
+            <div class="Frame5-More-History">
+                <div class="More-Title">
+                    <p>History</p>
+                    <h1>Our Story</h1>
+                </div>
+
+                <div class="More-History-Text">
+                    <p>In January 2011, CARISMA started as the first charitable store with support from Comú de la Massana, providing two spaces for free in the parish of la Massana. The store became the hub of association activities, involving volunteers from various nationalities. It gained quick success, receiving recognition from public administrations. In 2012, CARISMA won the first prize in the 7th edition of the Environmental Initiatives Contest. In 2014, it was honored as Citizen of the Year by Comú de la Massana.</p>
+                    <p>Over the years, CARISMA faced challenges hindering its growth, such as seeking new spaces, transportation, and repair of donated items, along with volunteer availability.</p>
+                    <p>In 2014, CARISMA collaborated with the AGENTAS program of the Escola Especialitzada Nostra Senyora de Meritxell (EENSM). AGENTAS managed stores in Escales – Engordany and Sant Julià de Lòria, employing individuals with disabilities. CARISMA volunteers continued managing the Massana and l'Aldosa stores.</p>
+                    <p>The "CARISMA amb AGENTAS" store in Escaldes – Engordany, and another in Sant Julià de Lòria opened in 2015 through collaborations with Comú d’Escaldes – Engordany, Andbank, Comú de Sant Julià de Lòria, and the Department of Environment of the Govern d Andorra.</p>
+                    <p>In January 2018, a direct agreement was made with EENSM, leading to the opening of a new store in Andorra la Vella, "EENSM amb CARISMA," thanks to collaboration with Morabanc. How's the company doing now? Any recent developments?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Footer">
+        <div class="Top-Text">
+            <p>To Donate items or volunteer, contact us at the main shop in la Massana in the Comú building</p>
+        </div>
+
+        <div class="Contact-Info">
+            <div class="Email">
+                <img src="public/images/email_icon.png" alt="email icon"> 
+                <!-- the idea with the img tags is to add an icon -->
+                <p>carismaandorra@gmail.com</p>
+            </div>
+
+            <div class="Phone">
+                <img src="public/images/phone-icon-1.png" alt="phone icon">
+                <p>+376 346 244</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/logic.js"></script>
+    <script src="js/volunteer.js"></script>
+    <script src="js/modalButtons.js"></script>
+</body>
+</html>

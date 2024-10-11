@@ -1,0 +1,75 @@
+.Frame5 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 9.5em;
+    align-items: center;
+}
+
+.Frame5-Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3em;
+}
+
+.Frame5-Header-SubTitle {
+    color: #969696;
+
+
+    font-size: 1.5625em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.Frame5-Header-Title {
+    font-size: 2.4375em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.Frame5-Content {
+    margin: auto;
+}
+
+.Frame5-Button-Container {
+    display: flex;
+    padding-top: 3em;
+}
+
+.Frame5-Button {
+    color: #FFF;
+    padding: 16px 24px;
+    font-weight: 600;
+    font-size: 1.5em;
+    border-radius: 8px;
+    border-radius: 8px;
+    background: #3777FF;
+    border: none;
+    margin-bottom: 3em;
+
+}
+
+/* .Frame1-Volunteer {
+    background-color: #3777FF;
+    color: #FFF;
+    padding: 16px 24px;
+
+    margin-bottom: 3em;
+} */
+
+.Frame5-Button:hover {
+
+    background-color: #2b6dfc;
+    /* color: #FFF; */
+}
+
+.Frame5-Button:active {
+    background-color: #2359cd;
+
+}
+
+.More-History-Text p {
+    padding-bottom: 1em;
+}
