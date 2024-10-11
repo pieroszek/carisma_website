@@ -1,8 +1,0 @@
-Hi so this is a text file with some onformation about the structure of the website
-
-
-Each section o nthe website can be split into its html div and then its respective css file, 
-with the naming convention following something:
-Section 1's elements called Fram1 in html and in css with id tags being the same so in the javascript it being easy to find.
-
-
