@@ -1,0 +1,3 @@
+/Users/maks/carisma_v3/carisma_website/backend/build/CMakeFiles/myapp.dir
+/Users/maks/carisma_v3/carisma_website/backend/build/CMakeFiles/edit_cache.dir
+/Users/maks/carisma_v3/carisma_website/backend/build/CMakeFiles/rebuild_cache.dir
